@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Secret Cipher</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+</head>
+
+<body>
+    <div id="screen_1" class="display">
+        <h1>Bienvenido Agente</h1>
+        <h3>Valide su contraseña</h3>
+        <div class="validationPass">
+            <input type="password" id="password">
+            <button id="validationPassButton"><span>Validar</span></button>
+        </div>
     </div>
+    <div id="screen_2" class="hide">
+        <a href="#section1">Quiero cifrar un mensaje</a>
+        <a href="#section2">Quiero descifrar un mensaje</a>
+        <div id="section1">
+            <label for="offset">Indica el offset: </label>
+            <input type="text" id="offsetC" name="coffset">
+            <label for="mensaje-cifrar">Mensaje: </label>
+            <input type="text" id="mensaje-acifrar" name="texto-mensaje">
+            <p id="mensaje-cifrado"></p>
+            <button id="cifrar-button"><span class="cifrar-button">Cifrar</span></button>
+        </div>
+
+        <div id="section2">
+            <label for="offset">Indica el offset: </label>
+            <input type="text" id="offsetD" name="doffset">
+            <label for="mensaje-descifrar">Mensaje: </label>
+            <input type="text" id="mensaje-adescifrar" name="texto-mensaje">
+            <p id="mensaje-descifrado"></p>
+            <button id="descifrar-button"><span class="descifrar-button">Descifrar</span></button>
+        </div>
+    </div>
+
+
+
+
+
+
+
     <script src="index.js" type="module"></script>
-  </body>
+</body>
+
 </html>
