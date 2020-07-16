@@ -18,8 +18,10 @@ function cipherAction() {
     let txtChar = [];
 
     cutTxt.forEach(function(caracter) {
-        let operation = ((((caracter.charCodeAt()) - 65 + offsetU) % 26) + (caracter.charCodeAt()));
-        console.log(operation);
+        let operation = (((caracter.charCodeAt()) - 65 + parseInt(offsetU)) % 26 + 65);
+        if ((caracter.charCodeAt()) == 32) {
+            operation = 32;
+        }
         txtChar.push(String.fromCharCode(operation));
     });
 

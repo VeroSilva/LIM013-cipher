@@ -1,7 +1,58 @@
 .display {
     display: block;
+    position: relative;
 }
 
 .hide {
     display: none;
+}
+
+body {
+    background-image: url("images/backgound2-screen1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body:before {
+    content: "";
+    background-color: #34495e;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.Title {
+    color: #edc232;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 75px;
+}
+
+.regularTitle {
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+    color: #c6d1d6;
+}
+
+#screen_1 {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 15%;
+    position: relative;
+}
+
+#validationPassButton {
+    background: #edc232;
+    color: #294e61;
+    border: none;
+    padding: 13px;
+    border-radius: 6px;
+}
+
+#password {
+    padding: 9px;
 }
