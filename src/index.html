@@ -18,23 +18,31 @@
         </div>
         <div id="screen_2" class="hide">
             <div id="section0">
-                <a href="#section1" class="chipherB">Quiero cifrar un mensaje</a>
-                <a href="#section2" class="chipherB">Quiero descifrar un mensaje</a>
+                <table id="options">
+                    <tr>
+                        <th class="optionA"><a href="#section1" class="chipherA">CIFRAR MENSAJE</a></th>
+                        <th class="optionB"><a href="#section2" class="chipherB">DESCIFRAR MENSAJE</a></th>
+                    </tr>
+                </table>
             </div>
             <div id="section1">
-                <label for="offsetC">Indica el offset: </label>
-                <input type="text" id="offsetC" name="coffset">
-                <label for="mensaje-cifrar">Mensaje: </label>
-                <input type="text" id="mensaje-acifrar" name="texto-mensaje">
-                <p id="mensaje-cifrado"></p>
-                <button id="cifrar-button"><span class="cifrar-button">Cifrar</span></button>
+                <div class="center">
+                    <form class="cipher-form">
+                        <label for="offsetC">Indica el offset: </label>
+                        <input type="text" id="offsetC" name="coffset">
+                        <label for="mensaje-cifrar">Mensaje: </label>
+                        <input type="text" id="mensaje-acifrar" name="texto-mensaje">
+                        <p id="mensaje-cifrado"></p>
+                        <button id="cifrar-button"><span class="cifrar-button">Cifrar</span></button>
+                    </form>
+                </div>
             </div>
 
             <div id="section2">
-                <label for="offset">Indica el offset: </label>
+                <label for="offsetD">Indica el offset: </label>
                 <input type="text" id="offsetD" name="doffset">
                 <label for="mensaje-descifrar">Mensaje: </label>
-                <input type="text" id="mensaje-adescifrar" name="texto-mensaje">
+                <input type="text" id="mensaje-descifrar" name="texto-mensaje">
                 <p id="mensaje-descifrado"></p>
                 <button id="descifrar-button"><span class="descifrar-button">Descifrar</span></button>
             </div>

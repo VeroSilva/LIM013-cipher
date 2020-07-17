@@ -12,6 +12,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    margin: 0px;
 }
 
 body:before {
@@ -45,6 +46,36 @@ body:before {
     position: relative;
 }
 
+#options {
+    width: 100%;
+    height: 100vh;
+    border-collapse: collapse;
+}
+
+.optionA {
+    background: #edc232;
+    width: 50%;
+}
+
+.optionB {
+    background: #294e61;
+    width: 50%;
+}
+
+.chipherB {
+    color: #edc232;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 4em;
+    text-decoration: none;
+}
+
+.chipherA {
+    color: #294e61;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 4em;
+    text-decoration: none;
+}
+
 #validationPassButton {
     background: #edc232;
     color: #294e61;
@@ -55,4 +86,19 @@ body:before {
 
 #password {
     padding: 9px;
+}
+
+#section1 {
+    width: 100%;
+    height: 100vh;
+    background: #dedddd;
+}
+
+.center {
+    width: 50%;
+    margin: auto;
+    padding: 15%;
+    font-family: 'Lato', sans-serif;
+    color: #294e61;
+    font-size: 1.5em;
 }

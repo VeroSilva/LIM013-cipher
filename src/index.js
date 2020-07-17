@@ -18,7 +18,10 @@ function validatePass() {
         document.getElementById("screen_2").classList.remove("hide");
 
         document.getElementById("mensaje-acifrar").value = "";
-        document.getElementById("offsetC").value =
+        document.getElementById("offsetC").value = "";
+
+        document.getElementById("mensaje-descifrar").value = "";
+        document.getElementById("offsetD").value = "";
     } else {
         alert("Contraseña incorrecta");
     }
