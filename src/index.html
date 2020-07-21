@@ -28,23 +28,31 @@
             <div id="section1">
                 <div class="center">
                     <form class="cipher-form">
-                        <label for="offsetC">Indica el offset: </label>
-                        <input type="text" id="offsetC" name="coffset">
-                        <label for="mensaje-cifrar">Mensaje: </label>
-                        <input type="text" id="mensaje-acifrar" name="texto-mensaje">
-                        <p id="mensaje-cifrado"></p>
+                        <div class="form1">
+                            <label for="offsetC">Indica el offset: </label>
+                            <input type="number" id="offsetC" name="coffset">
+                        </div>
+                        <label for="mensaje-cifrar" class="block1">Mensaje: </label>
+                        <textarea id="mensaje-acifrar"></textarea>
+                        <p id="mensaje-cifrado" class="hide"></p>
                         <button id="cifrar-button"><span class="cifrar-button">Cifrar</span></button>
                     </form>
                 </div>
             </div>
 
             <div id="section2">
-                <label for="offsetD">Indica el offset: </label>
-                <input type="text" id="offsetD" name="doffset">
-                <label for="mensaje-descifrar">Mensaje: </label>
-                <input type="text" id="mensaje-descifrar" name="texto-mensaje">
-                <p id="mensaje-descifrado"></p>
-                <button id="descifrar-button"><span class="descifrar-button">Descifrar</span></button>
+                <div class="center">
+                    <form class="cipher-form">
+                        <div class="form1">
+                            <label for="offsetD">Indica el offset: </label>
+                            <input type="number" id="offsetD" name="doffset">
+                        </div>
+                        <label for="mensaje-descifrar" class="block1">Mensaje: </label>
+                        <textarea id="mensaje-descifrar"></textarea>
+                        <p id="mensaje-descifrado" class="hide"></p>
+                        <button id="descifrar-button"><span class="descifrar-button">Descifrar</span></button>
+                    </form>
+                </div>
             </div>
         </div>
 
