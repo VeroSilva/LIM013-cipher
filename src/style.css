@@ -1,3 +1,5 @@
+/*Estilos para cultar y mostrar elementos*/
+
 .display {
     display: block;
     position: relative;
@@ -7,12 +9,16 @@
     display: none;
 }
 
+
+/*Estilos generales de body*/
+
 body {
     background-image: url("images/backgound2-screen1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     margin: 0px;
+    overflow: hidden;
 }
 
 body:before {
@@ -26,17 +32,8 @@ body:before {
     position: absolute;
 }
 
-.Title {
-    color: #edc232;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 75px;
-}
 
-.regularTitle {
-    font-family: 'Lato', sans-serif;
-    font-size: 35px;
-    color: #c6d1d6;
-}
+/*Estilos de la primera pantalla*/
 
 #screen_1 {
     margin: auto;
@@ -45,6 +42,33 @@ body:before {
     padding: 15%;
     position: relative;
 }
+
+.Title {
+    color: #edc232;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 91px;
+}
+
+.regularTitle {
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+    color: #c6d1d6;
+}
+
+#validationPassButton {
+    background: #edc232;
+    color: #294e61;
+    border: none;
+    padding: 13px;
+    border-radius: 6px;
+}
+
+#password {
+    padding: 9px;
+}
+
+
+/*Pantalla de opciones*/
 
 #options {
     width: 100%;
@@ -67,6 +91,7 @@ body:before {
     font-family: 'Fjalla One', sans-serif;
     font-size: 4em;
     text-decoration: none;
+    margin: 0px;
 }
 
 .chipherA {
@@ -74,18 +99,18 @@ body:before {
     font-family: 'Fjalla One', sans-serif;
     font-size: 4em;
     text-decoration: none;
+    margin: 0px;
 }
 
-#validationPassButton {
-    background: #edc232;
-    color: #294e61;
-    border: none;
-    padding: 13px;
-    border-radius: 6px;
+
+/*Pantallas de cifrado y descifrado*/
+
+.center>.chipherA {
+    font-size: 3em !important;
 }
 
-#password {
-    padding: 9px;
+.center>.chipherB {
+    font-size: 3em !important;
 }
 
 #section1,
@@ -155,4 +180,19 @@ body:before {
     -webkit-box-shadow: 10px 10px 25px 0px rgba(204, 194, 204, 1);
     -moz-box-shadow: 10px 10px 25px 0px rgba(204, 194, 204, 1);
     box-shadow: 10px 10px 25px 0px rgba(204, 194, 204, 1);
+}
+
+
+/*Botones de direccionamiento*/
+
+.button-out>img {
+    position: fixed;
+    margin: 996px 0px 0px 50px;
+    width: 135px;
+}
+
+.button-top>img {
+    position: fixed;
+    margin: 996px 0px 0px 200px;
+    width: 135px;
 }
