@@ -77,4 +77,3 @@ Esta aplicación es pensada para agencias de investigaciones privadas; que por s
 ## 5. Resúmen del feedback recibido 
 En los prototipos presentados se fue implementando mejoras sugeridas, como la implementación de botones para movilización dentro de la página y la mejora del uso de los colores en los **Call to actions**.
 
-
