@@ -65,9 +65,9 @@ Esta aplicación es pensada para agencias de investigaciones privadas; que por s
 ### Prototipo en papel 
 
 ### Prototipo en figma
-[pantalla 1](prototipos/pantalla1-figma.png)
-[pantalla 2](prototipos/pantalla1-figma.png)
-[pantalla 3](prototipos/pantalla1-figma.png)
+![pantalla 1](prototipos/pantalla1-figma.png)
+![pantalla 2](prototipos/pantalla1-figma.png)
+![pantalla 3](prototipos/pantalla1-figma.png)
 
 ### Prototipo implementado 
 
