@@ -13,7 +13,7 @@
 
 ***
 
-## 1. Preámbulo
+## 1. Cifrado de César para agentes de investigación privada
 
 Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher)
 es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio
@@ -42,82 +42,35 @@ aplicación en el sistema ROT13.
 
 ## 2. Resumen del proyecto
 
-¿Qué tengo que hacer exactamente? En este proyecto crearás una aplicación
-web que servirá para que el usuario pueda cifrar y descifrar un texto indicando
-un desplazamiento específico de caracteres (_offset_).
+En la aplicación web desarrollada el usuario puede ingresar mediante una contraseña; posteriormente 
+podrá elegir si desea Cifrar un mensaje o Descifrarlo, los valores a ingresar son el desplazamiento y el 
+mensaje a cifrar/descifar.
 
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría cifrar un mensaje y pensar en cómo debe ser esa experiencia de uso
-(qué pantallas, explicaciones, mensajes, colores, ¿marca?) etc. Algunas ideas de
-ejemplo:
+Esta aplicación es pensada para agencias de investigaciones privadas; que por sus políticas de trabajo requieren este servicio. De este modo los usuarios directos son investigadores que por fines de seguridad se comunican entre ellos y con mensajeros por medio de mensajes cifrados. Su objetivo principal al emplear esta herramienta es mantener la confidencialidad de sus investigaciones. Por consiguiente se evita el filtrado de información delicada y privada de sus clientes.
 
-* Crear claves seguras para el email.
-* Encriptar/cifrar una tarjeta de crédito.
-* Herramienta de mensajería interna de una organización de derechos humanos en
-  una zona de conflicto.
-* Mensajería secreta para parejas.
+## 3. Requerimientos de descargas del proyecto
 
-## 3. Objetivos de aprendizaje
+* Es necesario tener un editor de código; el de su preferencia (visual estudio, atom)
+* Si su Sistema Operativo es W  indows será necesario la instalación de una interfaz de terminal [UNIX Shell](https://github.com/Laboratoria/bootcamp/tree/master/topics/shell) puedes usar la versión completa de [Cmder](https://cmder.net/)
+  que incluye [Git bash](https://git-scm.com/download/win) y si tienes Windows 10
+  o superior puedes usar [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+* Del mismo modo debes tener git instalado.
+* Forkea el proyecto.
+* Clona tu fork de manera local (en tu compuradora)
+* Instala las dependencias del proyecto con el comando npm install. Esto asume que has instalado Node.js (que incluye npm).
+* Para ver la interfaz de tu programa en el navegador, usa el comando npm start para arrancar el servidor web y dirígete a http://localhost:5000 en tu navegador.
 
-Aprenderás a construir una aplicación web que interactuará
-con lx usuarix final a través del navegador, utilizando HTML, CSS y JavaScript
-como tecnologías.
+## 4. Producto final
 
-### HTML y CSS
+### Prototipo en papel 
 
-* [ ] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-* [ ] Uso de selectores de CSS.
-* [ ] Construir tu aplicación respetando el diseño realizado (maquetación).
+### Prototipo en figma
+[pantalla 1](prototipos/pantalla1-figma.png)
+[pantalla 2](prototipos/pantalla1-figma.png)
+[pantalla 3](prototipos/pantalla1-figma.png)
 
-### DOM
+### Prototipo implementado 
 
-* [ ] Uso de selectores del DOM.
-* [ ] Manejo de eventos del DOM.
-* [ ] [Manipulación dinámica del DOM.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
-(appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
-
-### JavaScript
-
-* [ ] Manipulación de strings.
-* [ ] Uso de condicionales (if-else | switch | operador ternario)
-* [ ] Uso de bucles (for | for..in | for..of | while)
-* [ ] Uso de funciones (parámetros | argumentos | valor de retorno)
-* [ ] Declaración correcta de variables (const & let)
-
-### Testing
-
-* [ ] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
-
-### Estructura del código y guía de estilo
-
-* [ ] Organizar y dividir el código en módulos (Modularización)
-* [ ] Uso de identificadores descriptivos (Nomenclatura | Semántica)
-* [ ] Uso de linter (ESLINT)
-
-### Git y GitHub
-
-* [ ] Uso de comandos de git (add | commit | pull | status | push)
-* [ ] Manejo de repositorios de GitHub (clone | fork | gh-pages)
-
-### UX
-
-* [ ] Diseñar la aplicación pensando y entendiendo al usuario.
-* [ ] Crear prototipos para obtener feedback e iterar.
-* [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
-
-## 4. Consideraciones generales
-
-* El equipo de coaches te dará un tiempo sugerido e indicaciones sobre si trabajar
-  sola o en equipo. Recuerda que cada una aprende a diferente ritmo.
-* El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando GitHub pages. Si no sabes lo que es GitHub, no
-  te preocupes, lo aprenderás durante este proyecto.
-
-## 5. Criterios de aceptación mínimos del proyecto
-
-Usa este alfabeto simple (solamente mayúsculas y sin ñ):
-
-* A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 
 ### Definición del producto
 
