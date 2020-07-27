@@ -188,11 +188,11 @@ body:before {
 .button-out>img {
     position: fixed;
     margin: 996px 0px 0px 50px;
-    width: 135px;
+    width: 100px;
 }
 
 .button-top>img {
     position: fixed;
     margin: 996px 0px 0px 200px;
-    width: 135px;
+    width: 100px;
 }

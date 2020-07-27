@@ -20,7 +20,17 @@ function cipherAction() {
     let txtChar = [];
 
     cutTxt.forEach(function(caracter) {
-        let operation = (((caracter.charCodeAt()) - 65 + parseInt(offsetU)) % 26 + 65);
+        let operation;
+        if (caracter.charCodeAt() >= 65 && caracter.charCodeAt() <= 90) {
+            operation = (((caracter.charCodeAt()) - 65 + parseInt(offsetU)) % 26 + 65);
+            console.log(operation);
+            if (operation < 65) {
+                operation += 26;
+            }
+        } else if (caracter.charCodeAt() >= 97 && caracter.charCodeAt() <= 122) {
+            console.log("HOLA2");
+            operation = (((caracter.charCodeAt()) - 97 + parseInt(offsetU)) % 26 + 97);
+        }
         if ((caracter.charCodeAt()) == 32) {
             operation = 32;
         }
@@ -51,20 +61,28 @@ function dcipherAction() {
     let txtChar = [];
 
     cutTxt.forEach(function(caracter) {
-        let operation = (((caracter.charCodeAt()) - 65 - parseInt(offsetU)) % 26 + 65);
+        let operation;
+        if (caracter.charCodeAt() >= 65 && caracter.charCodeAt() <= 90) {
+            operation = (((caracter.charCodeAt()) - 65 - parseInt(offsetU)) % 26 + 65);
+            if (operation < 65) {
+                operation += 26;
+            }
+        } else if (caracter.charCodeAt() >= 97 && caracter.charCodeAt() <= 122) {
+            operation = (((caracter.charCodeAt()) - 97 - parseInt(offsetU)) % 26 + 97);
+            if ((caracter.charCodeAt()) == 32) {
+                operation = 32;
+            }
+        }
         if ((caracter.charCodeAt()) == 32) {
             operation = 32;
         }
-        if (operation < 65 && operation != 32) {
-            operation += 26;
-        }
+
         txtChar.push(String.fromCharCode(operation));
+
     });
-
-    document.getElementById("mensaje-descifrado").classList.add("display");
-    document.getElementById("mensaje-descifrado").classList.remove("hide");
-
     const txtCipherReady = document.getElementById("mensaje-descifrado");
     txtCipherReady.innerHTML = "<p>" + txtChar.join("") + "</p>";
 
+    document.getElementById("mensaje-descifrado").classList.add("display");
+    document.getElementById("mensaje-descifrado").classList.remove("hide");
 }
