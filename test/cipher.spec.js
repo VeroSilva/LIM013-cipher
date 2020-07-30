@@ -39,9 +39,12 @@ describe('cipher', () => {
         // Se quiser adicionar testes para letras minúsculas, descomente o teste
         // abaixo.
         //
-        // it('should return "hijklmnopqrstuvwxyzabcdefg" for "abcdefghijklmnopqrstuvwxyz" with offset 33', () => {
-        //   expect(cipher.encode(33, 'abcdefghijklmnopqrstuvwxyz')).toBe('hijklmnopqrstuvwxyzabcdefg');
-        // });
+        it('should return "hijklmnopqrstuvwxyzabcdefg" for "abcdefghijklmnopqrstuvwxyz" with offset 33', () => {
+            expect(cipher.encode(33, 'abcdefghijklmnopqrstuvwxyz')).toBe('hijklmnopqrstuvwxyzabcdefg');
+        });
+        //it('should return "O" for "Ñ" with offset 1', () => {
+        //expect(cipher.decode(1, 'Ñ')).toBe('O');
+        //});
 
         // Hacker edition
         //
@@ -89,6 +92,13 @@ describe('cipher', () => {
         //
         it('should return "abcdefghijklmnopqrstuvwxyz" for "hijklmnopqrstuvwxyzabcdefg" with offset 33', () => {
             expect(cipher.decode(33, 'hijklmnopqrstuvwxyzabcdefg')).toBe('abcdefghijklmnopqrstuvwxyz');
+        });
+
+        it('should return "xyz" for "abc" with offset 3', () => {
+            expect(cipher.decode(3, 'abc')).toBe('xyz');
+        });
+        it('should return " " for " " with offset 3', () => {
+            expect(cipher.decode(3, ' ')).toEqual(' ');
         });
 
         // Hacker edition
