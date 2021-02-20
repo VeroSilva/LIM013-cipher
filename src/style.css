@@ -67,6 +67,15 @@ body:before {
     padding: 9px;
 }
 
+.credential-sticker {
+    position: absolute;
+    background: #edc232;
+    padding: 15px;
+    top: 0px;
+    color: #294e61;
+    border-radius: 0px 0px 10px 10px;
+    left: 0px;
+}
 
 /*Pantalla de opciones*/
 
@@ -185,14 +194,23 @@ body:before {
 
 /*Botones de direccionamiento*/
 
-.button-out>img {
-    position: fixed;
-    margin: 996px 0px 0px 50px;
+.button-out {
+    position: absolute;
     width: 100px;
+    top: 4vh;
+    left: 90vw;
 }
 
-.button-top>img {
-    position: fixed;
-    margin: 996px 0px 0px 200px;
+#goup > img {
+    position: absolute;
     width: 100px;
+    top: 103vh;
+    left: 90vw;
+}
+
+#goup2 > img {
+    position: absolute;
+    width: 100px;
+    top: 203vh;
+    left: 90vw;
 }
